@@ -6,13 +6,16 @@
 
     <style>
         body {
-            position: absolute;             
+            position: absolute;  
+            font-size: 4.5vw;           
         }
 
-        p div {
-            display: block;
-            width: 80%;
-            overflow: visible;           
+        div #txt {
+            display:block;
+            width: 90vw;
+            height: auto;
+            
+            position: relative;           
         }
 
         #sq {
@@ -26,8 +29,8 @@
         }
 
         #sq #ccr {
-            width: 60%;
-            height: 60%;
+            width: calc(60% - 12px);
+            height: calc(60% - 12px);
             z-index: 10;
             float:left;
             left: calc(20% - 6px);
@@ -39,8 +42,8 @@
         }
 
         #sq #ccg {
-            width: 60%;
-            height: 60%;
+            width: calc(60% - 12px);
+            height: calc(60% - 12px);
             z-index: 20;
             float:left;
             bottom: 0;
@@ -54,8 +57,8 @@
         }
 
         #sq #ccb {
-            width: 60%;
-            height: 60%;
+            width: calc(60% - 12px);
+            height: calc(60% - 12px);
             z-index: 30;
             float:left;
             left: calc(40% - 18px);
@@ -67,11 +70,28 @@
             margin-bottom: 6px;              
         }
 
-        #ccr, #ccg, #ccb div{
+        #ccr div{
             display: absolute;
             position: relative;
             float: left;
-            left: 50px;            
+            top: calc(50% - 0.6em);
+            left: calc(50% - 0.3em);            
+        }
+
+        #ccg div{
+            display: absolute;
+            position: relative;
+            float: left;
+            top: calc(50% - 0.6em);
+            left: calc(50% - 0.3em);            
+        }
+
+        #ccb div{
+            display: absolute;
+            position: relative;
+            float: left;
+            top: calc(50% - 0.6em);
+            left: calc(50% - 0.3em);            
         }
 
        
@@ -80,13 +100,11 @@
     
 </head>
 <body>
-    <p><div>fsaaaaaaaaaaaaaaaaaaaaaaaaaaadsssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-        sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
-        sssssssssssssssssssssssssssssssa</div></p>
+    <div><div id="txt">fsaaaaaaaaaaaaaaaaaaaaaaaaaaadssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssdsgfsdagaddsdagdsdagssssssssssssssssssssssssssssssa</div></div>
     <div id="sq">
         <div id="ccr"><div>R</div></div>
-        <div id="ccg">G</div>
-        <div id="ccb">B</div>
+        <div id="ccg"><div>G</div></div>
+        <div id="ccb"><div>B</div></div>
     </div>
     
 </body>
