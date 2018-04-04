@@ -34,8 +34,8 @@
         } 
 
         .pr {
-            width: calc(60% - 12px);
-            height: calc(60% - 12px);
+            width: calc(60% - 1.2vw);
+            height: calc(60% - 1.2vw);
             position: absolute;            
             border-radius: 50%;
         }
@@ -43,10 +43,11 @@
         .ccr {            
             z-index: 10;
             float:left;
-            left: calc(20% + 6px);
+            left: calc(20%);
+            top: 0vw;
             background-color: rgba(255,0,0,0.59); 
-            border: solid red 6px;            
-            margin-top: 6px;            
+            border: solid red 0.6vw;            
+            margin-top: 1.2vw;            
         }
 
         .ccg {            
@@ -55,9 +56,9 @@
             bottom: 0;
             left: 0;
             background-color: rgba(0,255,0,0.59); 
-            border: solid green 6px;          
-            margin-bottom: 6px;
-            margin-left: 6px;  
+            border: solid green 0.6vw;          
+            margin-bottom: 1.2vw;
+            margin-left: 1.2vw;  
         }
 
         .ccb {            
@@ -66,9 +67,9 @@
             left: calc(40% - 0px);
             bottom: 0;
             background-color:  rgba(0,0,255,0.59);   
-            border: solid blue 6px;           
-            margin-bottom: 6px;
-            margin-left: -6px;              
+            border: solid blue 0.6vw;           
+            margin-bottom: 1.2vw;
+            margin-left: -1.2vw;              
         }
 
         .pr div {            
@@ -78,40 +79,40 @@
         }
 
         @keyframes ra {
-            from {transform:translate(3px, calc(30% + 3px));
+            from {transform:translate(0, 30%);
             }
             to {                
             }
         }  
         .ccr {
             animation: ra 5s;
-            animation-fill-mode: forwards;
+            animation-fill-mode: backwards;
             animation-iteration-count: 1; 
-            animation-delay: 0s;           
+            animation-delay: 3s;           
         }      
         @keyframes ga {
-            from {transform:translate(calc(30% + 15px), calc(-30% - 6px));
+            from {transform:translate(30%, -30%);
             }
             to {                
             }
         }  
         .ccg {
             animation: ga 5s;
-            animation-fill-mode: forwards;
+            animation-fill-mode: backwards;
             animation-iteration-count: 1;
-            animation-delay: 0s;            
+            animation-delay: 3s;            
         }      
         @keyframes ba {
-            from {transform:translate(calc(-30% + 6px), calc(-30% - 6px));
+            from {transform:translate(-30%, -30%);
             }
             to {                
             }
         }  
         .ccb {
             animation: ba 5s;
-            animation-fill-mode: forwards;
+            animation-fill-mode: backwards;
             animation-iteration-count: 1; 
-            animation-delay: 0s;           
+            animation-delay: 3s;           
         }      
         
 
