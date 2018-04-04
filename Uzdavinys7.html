@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />   
+    <title>Uzdavinys nr7</title>
+
+    <style>
+        body {
+            position: absolute;  
+            font-size: 4.5vw;
+            padding: 0 0;
+            margin: 0 0;           
+        }
+
+        div .txt {
+            display:block;
+            width: 95vw;
+            height: auto;            
+            position: relative;
+            font-size: 0.3em;            
+            word-wrap: break-word;          
+        }
+
+        .sq {
+            display: block;
+            width: 50vw;
+            height: 50vw;
+            background-color: grey;
+            float:left;
+            left: 25vw;
+            position: relative;
+            padding: 0 0;
+            margin: 0 0;
+        } 
+
+        .pr {
+            width: calc(60% - 12px);
+            height: calc(60% - 12px);
+            position: absolute;            
+            border-radius: 50%;
+        }
+
+        .ccr {            
+            z-index: 10;
+            float:left;
+            left: calc(20% + 6px);
+            background-color: rgba(255,0,0,0.59); 
+            border: solid red 6px;            
+            margin-top: 6px;            
+        }
+
+        .ccg {            
+            z-index: 20;
+            float:left;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0,255,0,0.59); 
+            border: solid green 6px;          
+            margin-bottom: 6px;
+            margin-left: 6px;  
+        }
+
+        .ccb {            
+            z-index: 30;
+            float:left;
+            left: calc(40% - 0px);
+            bottom: 0;
+            background-color:  rgba(0,0,255,0.59);   
+            border: solid blue 6px;           
+            margin-bottom: 6px;
+            margin-left: -6px;              
+        }
+
+        .pr div {            
+            position: relative;
+            text-align: center;
+            top: calc(50% - 0.5em);                        
+        }
+
+        @keyframes ra {
+            from {transform:translate(3px, calc(30% + 3px));
+            }
+            to {                
+            }
+        }  
+        .ccr {
+            animation: ra 5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1; 
+            animation-delay: 0s;           
+        }      
+        @keyframes ga {
+            from {transform:translate(calc(30% + 15px), calc(-30% - 6px));
+            }
+            to {                
+            }
+        }  
+        .ccg {
+            animation: ga 5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-delay: 0s;            
+        }      
+        @keyframes ba {
+            from {transform:translate(calc(-30% + 6px), calc(-30% - 6px));
+            }
+            to {                
+            }
+        }  
+        .ccb {
+            animation: ba 5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1; 
+            animation-delay: 0s;           
+        }      
+        
+
+    </style>    
+</head>
+<body>
+    <div><div class="txt p">
+            You are something the whole universe is doing in the same way that a wave is something that the whole ocean is doing.          
+            The real you is not a puppet which life pushes around.            
+            The real, deep down you is the whole universe.            
+            So then, when you die, you’re not going to have to put up with everlasting non-existing. Because that's not an experience.
+            Try and imagine what it will be like to go to sleep and never wake up.Think about that.Children think about that.It’s one of the great wonders of life.What will it be like to go to sleep and never wake up?
+        </div></div>
+    <div class="sq">
+        <div class="ccr pos pr"><div>R</div></div>
+        <div class="ccg pos pr"><div>G</div></div>
+        <div class="ccb pos pr"><div>B</div></div>
+    </div>
+    
+</body>
+</html>
